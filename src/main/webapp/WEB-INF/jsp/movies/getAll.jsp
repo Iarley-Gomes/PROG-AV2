@@ -7,7 +7,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Filmes</title>
-<link rel="stylesheet" href="${path}/css/style.css" />
+<link rel="stylesheet" href="${path}/css/global.css" />
+<link rel="stylesheet" href="${path}/css/table.css" />
 </head>
 <body>
 	<div>
@@ -29,10 +30,11 @@
 					<tr>
 						<td>${movie.title}</td>
 						<td>${movie.price}</td>
-						<td><a href="${path}/movies/id/${movie.id}">Editar</a>
+						<td class="actions">
+						<a href="${path}/movies/id/${movie.id}" class="btn warning">Editar</a>
 							<form action="${path}/movies/delete" method="post">
 								<input type="hidden" name="movie.id" value="${movie.id}" />
-								<button>Excluir</button>
+								<button class="btn error">Excluir</button>
 							</form></td>
 					</tr>
 				</c:forEach>
