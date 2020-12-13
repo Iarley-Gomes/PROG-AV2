@@ -7,6 +7,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="${path}/css/global.css" />
+<link rel="stylesheet" href="${path}/css/login.css" />
 </head>
 <body>
 	<form action="${path}/movies/save" method="post">
